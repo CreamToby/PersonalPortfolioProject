@@ -9,6 +9,10 @@
     color: #eae5e1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* navigation bar */
 nav {
@@ -52,7 +56,7 @@ nav ul li a {
 
 .about h1 {
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 .about h5 {
@@ -164,7 +168,8 @@ nav ul li a {
 
 .contact p {
     font-style: italic;
-    padding: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .social {
@@ -176,8 +181,15 @@ nav ul li a {
 
 .social a {
     text-decoration: none;
-    padding: 10px 20px;
-    text-shadow: 1px 1px 2px #827e7c;    
+    padding: 1em 20px 1em 20px;
+    text-shadow: 1px 1px 2px #827e7c; 
+    font-size: 20px; 
+}
+
+.social a:hover {
+    padding-top: 1.5em;
+    transition-duration: 0.2s;
+
 }
 
 /* footer */
@@ -196,6 +208,9 @@ footer {
 
 
 @media(max-width: 425px) {
+    nav {
+        font-size: 1rem;
+    }
     .about h1 {
         font-size: 30px;
     }
